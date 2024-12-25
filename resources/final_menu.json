@@ -1,0 +1,130 @@
+{
+  "menu": [
+    {
+      "type": "burger",
+      "items": [
+        {
+          "name": "Classic Cheeseburger",
+          "description": "Juicy beef patty with melted cheddar, lettuce, tomato, and pickles on a sesame bun.",
+          "price": 8.99,
+          "optional_changes": [
+            "Add bacon",
+            "No tomato",
+            "No cheese"
+          ]
+        },
+        {
+          "name": "Spicy Black Bean Burger",
+          "description": "Black bean patty with spicy mayo, lettuce, and tomato.",
+          "price": 7.99,
+          "optional_changes": [
+            "No mayo",
+            "No lettuce",
+            "Add avocado"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pasta",
+      "items": [
+        {
+          "name": "Spaghetti Carbonara",
+          "description": "Classic Italian pasta with pancetta, egg, and Parmesan.",
+          "price": 12.99,
+          "optional_changes": [
+            "Add chicken",
+            "No Parmesan",
+            "No pancetta"
+          ]
+        },
+        {
+          "name": "Penne Arrabbiata",
+          "description": "Spicy tomato sauce over penne pasta, topped with fresh basil.",
+          "price": 10.99,
+          "optional_changes": [
+            "No basil",
+            "Extra spice",
+            "Add chicken"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "pizza",
+      "items": [
+        {
+          "name": "Margherita",
+          "description": "Classic pizza with fresh mozzarella, tomato sauce, and basil.",
+          "price": 9.99,
+          "optional_changes": [
+            "Add pepperoni",
+            "Extra cheese",
+            "No basil"
+          ]
+        },
+        {
+          "name": "BBQ Chicken Pizza",
+          "description": "Tangy BBQ sauce topped with grilled chicken, red onions, and cilantro.",
+          "price": 11.99,
+          "optional_changes": [
+            "No onions",
+            "Add bacon",
+            "Extra BBQ sauce"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "dessert",
+      "items": [
+        {
+          "name": "Tiramisu",
+          "description": "Layers of coffee-soaked ladyfingers, mascarpone cream, and cocoa powder.",
+          "price": 6.99,
+          "optional_changes": [
+            "Extra cocoa powder",
+            "No alcohol",
+            "No cocoa"
+          ]
+        },
+        {
+          "name": "Cheesecake",
+          "description": "Creamy cheesecake with a graham cracker crust and fruit topping.",
+          "price": 5.99,
+          "optional_changes": [
+            "No fruit topping",
+            "Extra crust",
+            "No whipped cream"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "salad",
+      "items": [
+        {
+          "name": "Caesar Salad",
+          "description": "Crisp romaine lettuce, Parmesan, croutons, and Caesar dressing.",
+          "price": 7.49,
+          "optional_changes": [
+            "Add chicken",
+            "No croutons",
+            "No cheese"
+          ]
+        },
+        {
+          "name": "Greek Salad",
+          "description": "Tomatoes, cucumbers, olives, feta, and red onion with a lemon vinaigrette.",
+          "price": 6.99,
+          "optional_changes": [
+            "No olives",
+            "No feta",
+            "Add grilled chicken"
+          ]
+        }
+      ]
+    }
+  ]
+}
+
