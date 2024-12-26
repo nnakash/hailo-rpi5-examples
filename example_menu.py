@@ -250,8 +250,9 @@ class RestaurantMenu(tk.Tk):
             parsed_order = rpi_script.parse_prompt(self.feeder, prompt)
 
             for full_item_name, count in parsed_order.items():
-                item_name, *options = full_item_name.split(':')[0].strip().split(',')
-                item_name = item_name.strip()
+                full_item_name, *options = full_item_name.split('.,')
+                item_name = full_item_name.split(':')[0].strip()
+                print(full_item_name, item_name, options)
                 options = ', '.join(option.strip() for option in options) if options else None
 
                 if item_name in self.ordered_items:
