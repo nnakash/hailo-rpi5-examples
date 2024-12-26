@@ -73,7 +73,10 @@ The repository comes with example menus and a GUI to help you get started quickl
 
 ---
 
-## Example Prompt to the GUI 
+### Example of Speech to Order 
+Press the mic button and order :)
+
+## Example Text Prompt to the GUI 
 Luanch the GUI : python menu_example.py
 ```
 I would like 1 pizza with extra cheese, 2 garlic breads, and 3 orange juices.
@@ -85,7 +88,6 @@ Order Summary:
 - 2 Garlic Breads
 - 3 Orange Juices
 ```
-
 
 ----
 
