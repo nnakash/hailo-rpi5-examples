@@ -2,6 +2,17 @@
 
 Welcome to the **FeeMe** repository! This open-source project enables users to select items from a restaurant menu by writing a free-text prompt instead of manually choosing each item. FeeMe intelligently matches the user's description to the closest items available on the menu.
 
+### System Digrams 
+
+### Build Menu DB
+![image](https://github.com/user-attachments/assets/c22eefef-6137-4b5e-b797-23a306759a54)
+
+
+### Run System
+![image](https://github.com/user-attachments/assets/d65c9fa9-d0fa-43d5-b6a2-2a0811bcb83b)
+
+
+
 ### Example Use Case
 Instead of selecting individual menu items, users can simply type:
 
@@ -22,7 +33,6 @@ The system will parse this prompt, understand the order, and create an itemized 
 - **Extensible Framework:** Add new features like drink sizes, combo deals, or dietary restrictions with ease.
 - **Example Applications:** Can be integrated into drive-through machines, automatic GUI-based ordering kiosks, or mobile apps for faster food ordering.
 - **Future Enhancements:**
-  - **Speech-to-Text:** In the future, when Hailo chips support it, we plan to integrate Whisper for speech-to-text functionality. This will allow users to describe their orders verbally, enhancing accessibility and convenience.
   - **Image-Based Search:** We plan to add functionality to search menu items based on food images, providing another intuitive way for users to place orders.
 
 ---
