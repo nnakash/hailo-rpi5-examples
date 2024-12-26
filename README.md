@@ -94,6 +94,11 @@ Order Summary:
 ## Video Example
 https://www.youtube.com/watch?v=ltCH55-BGdA
 
+
+### Future: Image to Order . 
+1. Take a photo
+2. Upload to the GUI
+3. Order
 ---
 
 
