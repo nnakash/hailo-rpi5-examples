@@ -3,6 +3,26 @@ from clip_text_encoder_hef import CLIP
 import re
 import whisper
 
+import re
+ 
+# Dictionary mapping number words to digits
+NUMBER_WORDS = {
+    "zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, 
+    "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, 
+    "ten": 10
+}
+
+def replace_number_words(text):
+    """
+    Replace number words in a string with their numeric equivalents.
+    """
+    def word_to_digit(match):
+        word = match.group(0).lower()
+        return str(NUMBER_WORDS.get(word, word))
+    # Match whole words that are in the NUMBER_WORDS dictionary
+    pattern = r'\b(' + '|'.join(NUMBER_WORDS.keys()) + r')\b'
+    return re.sub(pattern, word_to_digit, text)
+
 
 class FeedMe:
     def __init__(self, menu_path, clip_text_encoder):
@@ -55,7 +75,7 @@ class FeedMe:
         result = {}
 
         # Split the input string into parts based on delimiters (';' or spaces)
-        parts = input_string.split(";")
+        parts = input_string.split("also")
 
         for part in parts:
             # Clean and split each part further based on spaces
@@ -88,7 +108,7 @@ class FeedMe:
 
         # dish_type = max(similarities, key=similarities.get)
         sorted_similarities = sorted(similarities, key=similarities.get, reverse=True)
-        dish_types = sorted_similarities[:2]
+        dish_types = sorted_similarities[:3]
         if similarities[dish_types[0]] < self.tsh:
             return None
 
@@ -96,6 +116,7 @@ class FeedMe:
         dish_options = {
             **self.menu[dish_types[0]]["sub_items"],
             **self.menu[dish_types[1]]["sub_items"],
+            **self.menu[dish_types[2]]["sub_items"]
         }
         similarities = {}
         for key, item in dish_options.items():
@@ -153,3 +174,4 @@ def parse_prompt(feeder, prompt):
     print(f"you orderd {prompt}")
     output_order = feeder(prompt)
     print(f"you will get {output_order}")
+    return output_order
