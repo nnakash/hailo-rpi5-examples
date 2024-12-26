@@ -1,6 +1,6 @@
 # FeeMe - Free Text Menu Ordering
 
-Welcome to the **FeeMe** repository! This open-source project enables users to select items from a restaurant menu by writing a free-text prompt instead of manually choosing each item. FeeMe intelligently matches the user's description to the closest items available on the menu.
+Welcome to the **FeeMe** repository! This open-source project enables users to select items from a restaurant menu by Talking / writing or Even taking a picture (Future) freely instead of manually choosing each item. FeeMe intelligently matches the user's description to the closest items available on the menu.
 
 ### System Digrams 
 
